@@ -1,0 +1,195 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/custom-about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <!-- materialize JS file include -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- - -->
+    <nav>
+      <div class="nav-wrapper" style="background-color:white;">
+        <a href="#" class="brand-logo"><img src="https://d3irk3g7luh32r.cloudfront.net/wp-content/uploads/sites/3/2015/03/Skills.png" style="height:50px;margin-top:7px;"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" style="color:red;">menu</i></a>
+
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <div class="searchbar"></div>
+            <div class="input-field col s6 navbar-search" id="navbar-search">
+              <input id="search_name" type="text" class="validate">
+              <label for="search_name">Search ...</label>
+              <i class="material-icons">search</i>
+            </div>
+          </li>
+          <li><a class="nav-link waves-effect waves-light btn cus-w-b-hr">start new skill</a></li>
+          <li><div style="width:64px;height:100%;margin:0px;padding:16px;"><div style="border-radius:50%;width:100%;height:100%; background-color:gray;"></div></li>
+          <li><a href="#" style="color:black;">user name</a></li>
+          <li><a href="#" style="font-size:16px;color:black;">250</a></li>
+          <li><a href='#' class="dropdown-button" data-activates='dropdownmenu' style="height: 100%;margin: 0px !important;width: 64px;background-color: rebeccapurple;"><i class="material-icons" style="font-size:36px;">menu</i></a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a class="nav-link btn cus-b-w-hr-sh-f">About</a></li>
+          <li><a class="nav-link waves-effect waves-light btn cus-b-w-hr-sh-f" >Service</a></li>
+          <li><a class="nav-link waves-effect waves-light btn cus-b-w-hr-sh-f" >Contract</a></li>
+          <li><a class="nav-link waves-effect waves-light btn cus-w-b-hr modal-trigger" href="#joinmodal">Login/Register</a></li>
+        </ul>
+      </div>
+    </nav>      
+    <ul id='dropdownmenu' class='dropdown-content' style="width:203px !important; right:12px;">
+      <li><a href="#!" class="menu-enable-item">Go to home</a></li>
+      <li><a href="#!" class="menu-enable-item">Upgrade</a></li>
+      <li class="divider"></li>
+      <li>
+        <ul class="menu-enable-group">Your Ideas:
+          <li><a><div class="menu-img" style="display:flex;">Your idea #1</div></a></li>
+          <li><a><div class="menu-img" style="display:flex;">Your idea #2</div></a></li>
+          <li><a><div class="menu-img" style="display:flex;">Your idea #3</div></a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="menu-enable-item">See More...</a></li>
+      <li class="divider"></li>
+      <li><a href="#" class="menu-enable-item">Begin New Idea</a></li>
+      <li><a href="#" class="menu-enable-item">Explore</a></li>
+      <li class="divider"></li>
+      <li><a href="#" class="menu-enable-item">Learning</a></li>
+      <li><a href="#" class="menu-enable-item">Leave Feedback</a></li>
+      <li><a href="#" class="menu-enable-item">Settings</a></li>
+      <li><a href="#" class="menu-enable-item">Logout</a></li>
+    </ul>
+    <div id="joinmodal" class="modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          <h3>
+          <img src="https://ideajam.io/ideajam_beta2_no_title.png" style="height: 50px">
+          Login To IdeaJam
+          </h3>
+        </div>
+      </div>
+      <div class="modal-content" style="border: 1px solid; border-color: #eeeeee;">
+        <form>
+          <div class="logincontainer">
+            <a class="nav-link waves-effect waves-light btn cus-w-r-hr"><i class="fa fa-google-plus"></i>Google Login</a>
+          </div>
+          <div class="logincontainer">
+            <a class="nav-link waves-effect waves-light btn cus-w-b-hr"><i class="fa fa-facebook"></i>Facebook Login</a>
+          </div>
+          <div class="logincontainer">
+            <a class="nav-link waves-effect waves-light btn cus-w-s-hr"><i class="fa fa-linkedin"></i>Linkedin Login</a>
+          </div>
+          <div class="logincontainer">
+            <a class="nav-link waves-effect waves-light btn cus-w-g-hr modal-trigger" id="signupbtn" href="#signupmodal">New Member</a>
+          </div>
+          <div class="logincontainer">
+            <a class="nav-link waves-effect waves-light btn cus-w-g-hr modal-trigger" href="#signinmodal">Existing Member Login</a>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn cus-w-g-hr" style="width:30%">Cancel</a>
+      </div>
+    </div>
+    <div id="signupmodal" class="modal">
+      <div class="modal-header margin-top-30">
+        <div class="modal-title center-align">
+          <h4 class="font-bold">REGISTER</h4>
+          <span class="small-font color-gray">All fields are required.</span>
+        </div>
+      </div>
+      <div class="modal-content" style="padding-top:0px; padding-bottom: 0px;">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="ideanick_name" type="text" class="validate">
+            <label for="ideanick_name">IdeaJam Nickname</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="email_address_up" type="text" class="validate">
+            <label for="email_address_up">Email Address</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="password_up" type="text" class="validate">
+            <label for="password_up">Password</label>
+          </div>
+          <div class="col s12 margin-top-20 margin-bottom-20">
+            <a class="nav-link waves-effect waves-light btn cus-w-b-hr">Create Account</a>
+          </div>
+          <div class="col s12 center-align">
+            <span class="small-font">By clicking "Create Account," you agree to the IdeaJam
+              <a href="#" class="normallink">"Terms of Use"</a>linked below.
+            <span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="signinmodal" class="modal">
+      <div class="modal-header margin-top-30">
+        <div class="modal-title center-align">
+          <h4 class="font-bold">SIGN IN</h4>
+        </div>
+      </div>
+      <div class="modal-content padding-top-0 padding-bottom-0">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email_address_in" type="email" class="validate">
+            <label for="email_address_in">Email Address</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="password_in" type="text" class="validate">
+            <label for="password_in">Password</label>
+          </div>
+          <div class="col s12 margin-top-20 margin-bottom-20">
+            <a class="nav-link waves-effect waves-light btn cus-w-b-hr">Sign-in</a>
+          </div>
+          <div class="center-align margin-bottom-30">
+            <a  href="#">Forgot Password?</a>
+          </div>
+          <div class="col s12 center-align border-top">
+            <span class="smaill-font">  Don't have an account? 
+              <a href="#" class="normallink">Register now</a>
+                or sign up with another account.
+            <span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#modal2" class="modal-trigger modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <h4>another modal</h4>
+        <p>hahaha</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+      $('.modal').modal();
+    });
+  </script>
+</html>

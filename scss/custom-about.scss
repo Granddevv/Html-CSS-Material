@@ -1,0 +1,99 @@
+.homepage-banner {
+  background: url("/idea-jam-homepage.jpeg");
+  background-position: center;
+  background-size: cover;  
+  color: #2a6698;
+}
+
+.navbar-search > input:focus ~ i {
+	color:#26a69a !important;
+}
+
+#navbar-search {
+	position:absolute;
+	top:0px;
+	left:232px;
+	width:294px;
+}
+#navbar-search input {
+	height:21px;
+	position:absolute; 
+	top:21px;
+	border-bottom: 1px solid;
+	color: #9e9e9e;
+	color:black; 
+	border-bottom: 1px solid; 
+	border-color:#9e9e9e;
+}
+#navbar-search label {
+	font-size:12px; 
+	top:-13px;
+	left:0px;
+}
+#navbar-search i {
+	position:absolute; 
+	right:0px; 
+	top:0px;
+	color:#9e9e9e;
+}
+
+
+.dropdown-content{
+  margin: 66px 0px 0px 0px;
+  overflow:inherit;
+  left: inherit !important;
+  width: 203px !important;
+  border-radius: 9px !important;
+}
+.dropdown-content > :first-child {
+	margin-top:10px !important;
+
+}
+
+/*.dropdown-button::before {
+  content: "▼";
+  display: inline;
+  padding-right: 5px;
+}*/
+
+.dropdown-content:after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0;
+    right: 10px;
+    z-index: -1;
+}
+
+.dropdown-content li {
+	min-height: 0px !important;
+}
+
+.dropdown-content a {
+	padding: 5px 16px !important;
+}
+
+.dropdown-content .menu-img:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-color: gray;
+	border-radius: 50%;
+}
+
+.dropdown-content .menu-enable-item {
+	color:black !important;
+}
+
+.dropdown-content .menu-disable-item {
+	color:gray !important;
+}
+
+.dropdown-content .menu-enable-group {
+	margin-left: 16px;
+	color: gray;
+}

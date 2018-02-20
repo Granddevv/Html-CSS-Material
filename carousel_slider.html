@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <!-- <link type="text/css" rel="stylesheet" href="custom-btn.css"> -->
+    <link type="text/css" rel="stylesheet" href="custom-about.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+  </head>
+
+  <body>
+    
+    <div class="carousel carousel-slider center" data-indicators="true">
+      <div class="carousel-item red white-text" href="#one!">
+        <div class="card" style="display:inline-block;width:20%">
+          <h1 style="color:black">Idea Name</h1>
+          <h2 style="color:black">Idea profile</h2>
+          <h3 style="color:black">Idea Description</h3>
+          <h4 style="color:black">Idea name</h4>
+          <h5 style="color:black">Idea Name</h5> 
+        </div>
+        <div class="card" style="display:inline-block;width:20%">
+          <h1 style="color:black">Idea Name</h1>
+          <h2 style="color:black">Idea profile</h2>
+          <h3 style="color:black">Idea Description</h3>
+          <h4 style="color:black">Idea name</h4>
+          <h5 style="color:black">Idea Name</h5> 
+        </div>
+        <div class="card" style="display:inline-block;width:20%">
+          <h1 style="color:black">Idea Name</h1>
+          <h2 style="color:black">Idea profile</h2>
+          <h3 style="color:black">Idea Description</h3>
+          <h4 style="color:black">Idea name</h4>
+          <h5 style="color:black">Idea Name</h5> 
+          <h5 style="color:black">Idea Name</h5> 
+          <h5 style="color:black">Idea Name</h5> 
+          <h5 style="color:black">Idea Name</h5> 
+        </div>
+        <div class="card" style="display:inline-block;width:20%">
+          <h1 style="color:black">Idea Name</h1>
+          <h2 style="color:black">Idea profile</h2>
+          <h3 style="color:black">Idea Description</h3>
+          <h4 style="color:black">Idea name</h4>
+          <h5 style="color:black">Idea Name</h5> 
+        </div>
+      </div>
+      <div class="carousel-item green white-text" href="#one!">
+        <span>str</span>
+      </div>
+      <a class="btn waves-effect white grey-text darken-text-2">button</a>
+
+    </div>
+    <!-- <button id="carousel_btn" style="position: absolute; top:30px; right:20px;">next button</button> -->
+  </body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript">
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $('#carousel_btn').click(function (e) {
+      console.log("carousle button click")
+      $('.carousel.carousel-slider').carousel('next');
+    });
+
+  </script>
+</html>
+
